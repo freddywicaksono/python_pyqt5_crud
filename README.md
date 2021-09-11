@@ -12,3 +12,7 @@ pip install PyQt5
 ```
 pip install mysql-connector-python
 ```
+## Download Qt Designer
+```
+https://build-system.fman.io/static/public/files/Qt%20Designer%20Setup.exe
+```
