@@ -134,9 +134,9 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             mycursor = mydb.cursor()
             
             if(self.edit_mode==True):
-                sql="DELETE FROM mahasiswa WHERE nim=%s"
-                val=(nim)                 
-                mycursor.execute(sql,val)   
+                
+                sql="DELETE FROM mahasiswa WHERE nim='" + nim + "'"                 
+                mycursor.execute(sql)   
                 mydb.commit()
                 if(mycursor.rowcount>0):
                     self.messagebox("SUKSES", "Data Mahasiswa Dihapus")
